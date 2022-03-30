@@ -1,0 +1,18 @@
+
+For entire setup look this link
+https://www.youtube.com/watch?v=O1L4gwakcxo&t=413s
+
+
+if Podfile is not working
+
+https://stackoverflow.com/questions/67283211/flutter-cocoapods-could-not-find-compatible-versions-for-pod-fbsdkcorekit
+
+if you have M1 chip
+
+    flutter clean
+    update all dependencies to the latest version in pubspec.yml file and do 'get pub'
+    Go to your Podfile and uncomment #platform :ios, '9.0' Then change the version to 10 platform :ios, '10.0' or higher version
+    go to ios folder through terminal and do 'arch -x86_64 pod repo update'
+    'arch -x86_64 pod update' or 'arch -x86_64 pod install'
+
+arch -x86_64 pod install --repo-update
